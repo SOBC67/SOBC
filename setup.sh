@@ -20,13 +20,15 @@ npm -v
 yarn -v
 
 # Clone frontend project
+cd ..
 git clone https://github.com/SOBC67/SOBC-front.git
 cd SOBC-front
 pm2 start "yarn run dev" --name SOBC-frontend
-npx update-browserslist-db@latest
+npx update-browserslist-db@latest -y
 cd ..
 
 # Clone backend project
+cd ..
 git clone https://github.com/SOBC67/Fast.git
 cd Fast
 
@@ -45,3 +47,4 @@ pip install -r requirements.txt
 # รัน Backend ด้วย PM2
 pm2 start "uvicorn app:app --host 0.0.0.0 --port 5000" --name SOBC-backend
 
+cd ..
