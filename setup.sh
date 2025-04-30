@@ -23,12 +23,12 @@ yarn -v
 cd ..
 git clone https://github.com/SOBC67/SOBC-front.git
 cd SOBC-front
+yarn
 pm2 start "yarn run dev" --name SOBC-frontend
 #npx update-browserslist-db@latest -y
 cd ..
 
 # Clone backend project
-cd ..
 git clone https://github.com/SOBC67/Fast.git
 cd Fast
 
